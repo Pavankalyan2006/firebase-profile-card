@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile Card Creator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Profile Card Creator</h1>
+  <button class="btn-show-form" onclick="toggleForm()">Create</button>
+
+  <div class="form-container" id="formContainer">
+    <input type="text" id="name" placeholder="Enter your name" required />
+    <input type="email" id="email" placeholder="Enter your email" required />
+    <textarea id="bio" rows="3" placeholder="Enter a short bio"></textarea>
+    <button class="submit-btn" onclick="createProfileCard()">Submit</button>
+  </div>
+
+  <div class="card-container" id="cardContainer"></div>
+
+  <!-- Firebase SDKs -->
+  <!-- Firebase App (compat version) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<!-- Firebase Firestore (compat version) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
